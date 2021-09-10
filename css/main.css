@@ -1,0 +1,17 @@
+body {
+  background-image: url(/HW/images/chuttersnap-6dGHyuW6T1g-unsplash.jpg);
+  background-size: cover;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px yellow;
+}
+
+#form-container {
+  max-width: max-content;
+}
+
+#submitButton {
+  min-height: 4em;
+  min-width: 4em;
+}

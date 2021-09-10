@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Day 3 JS Home Work</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Formula 1 API</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <br/>
+  <div class="container">
+    <h1 class="text-center  shadow p-3 mb-5 rounded">Formula 1 Season Lap Standings</h1>
+  </div>
+  <br/>
+  <div class="container" id="form-container">
+    <form name="seasonAndRoundInfo" class="text-center" id="seasonAndRoundInfoForm">
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" name="season" class="form-control" id="season" placeholder="2020" value="2020">
+            <label for="season">Season</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" name="round" class="form-control" id="round" placeholder="3" value="3">
+            <label for="round">Round</label>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <button type="submit" class="btn btn-outline-success rounded-circle" id="submitButton" onclick="clearData()">GO!</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <br/>
+        <table class="table table-dark table-striped">
+          <thead class="racer-headers">
+
+          </thead>
+          <tbody class="racer-list">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
